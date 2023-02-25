@@ -110,6 +110,6 @@ export default function ThemeSelector({}) {
     }, [selectedTheme])
 
     return <Form.Select value={selectedTheme} onChange={e => setSelectedTheme(e.target.value)}>
-        {bootswatchThemes.map(theme => <option value={theme.cdnUrl}>{theme.name}</option>)}
+        {bootswatchThemes.map((theme, index) => <option key={`theme-selection-${index}-${theme.name}`} value={theme.cdnUrl}>{theme.name}</option>)}
     </Form.Select>
 }
