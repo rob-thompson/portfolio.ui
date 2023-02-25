@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Image from "next/image";
 import ThemeSelector from "./ThemeSelector";
 
 export default function Menu() {
@@ -23,7 +22,7 @@ export default function Menu() {
                                 <Button>Write Posts</Button>
                             </Link>
                             <Link href={`/${username}`}>
-                                <Image src={user?.photoURL} alt={'user photo'}></Image>
+                                <img src={user?.photoURL} alt={'user photo'}></img>
                             </Link>
                         </>
                     )}
