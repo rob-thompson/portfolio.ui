@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Home",
+    "href": "/home"
+  },
+  {
+    "label": "Algorithm Visualizers",
+    "subMenuItems": [
+      { "label": "Sorts", "href": "/sorts" },
+      { "label": "Searches", "href": "/searches" },
+      { "label": "Machine Learning", "href": "/machinelearning" }
+    ]
+  },
+  {
+    "label": "Personal Tools",
+    "subMenuItems": [
+      { "label": "Animations", "href": "/animations" },
+      { "label": "Reusable components", "href": "/components" },
+      { "label": "Issue Tracker", "href": "/issues" }
+    ]
+  },
+  {
+    "label": "Contact",
+    "subMenuItems": [
+      { "label": "Email", "href": "/email" },
+      { "label": "LinkedIn", "href": "/#" }
+    ]
+  }
+]
