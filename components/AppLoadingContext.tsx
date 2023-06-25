@@ -5,7 +5,7 @@ export const AppLoader = createContext({
     setShowAppLoader: (b) => {}
 })
 
-const context = () => {
+const useAppLoadContext = () => {
     const context = useContext(AppLoader)
     if (context === undefined) {
         throw new Error('AppLoader hook must be used within the AppLoadingContext')
@@ -23,7 +23,7 @@ function AppLoadingContext({children}) {
 }
 
 export const useAppLoader = (initialState) => {
-    const {showAppLoader, setShowAppLoader} = context()
+    const {showAppLoader, setShowAppLoader} = useAppLoadContext()
     setShowAppLoader(initialState)
     return setShowAppLoader
 }

@@ -29,7 +29,7 @@ export default function Home() {
             document.onmousemove = null
             document.ontouchmove = null
         }
-    }, [])
+    }, [handleOnMove])
 
     function handleOnMove(e) {
         const point = e.clientX / window.innerWidth * 100;
